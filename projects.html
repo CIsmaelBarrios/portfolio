@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyectos - Claudio Ismael Barrios</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    /* Animaciones divertidas */
+    @keyframes jelly {
+      0% { transform: scale(1,1); }
+      25% { transform: scale(1.1, 0.9); }
+      50% { transform: scale(0.9, 1.1); }
+      75% { transform: scale(1.05, 0.95); }
+      100% { transform: scale(1,1); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes wiggle {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      50% { transform: rotate(-3deg); }
+      75% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes dance {
+      0% { transform: rotate(0deg); }
+      20% { transform: rotate(5deg); }
+      40% { transform: rotate(-5deg); }
+      60% { transform: rotate(3deg); }
+      80% { transform: rotate(-3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #f4f1ec url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat;
+      color: #3b2f2f;
+      animation: bounceIn 1s ease-out;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px dashed #d8c3a5;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      animation: bounceIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #6b4c3b;
+      text-align: center;
+      animation: jelly 1.5s ease-in-out;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #5b3b2c;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #bfa28b;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #f7f3ef;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    a:hover {
+      background-color: #bfa28b;
+      color: white;
+      animation: wiggle 0.4s ease-in-out;
+    }
+
+    .back-link {
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+    }
+
+    .experiencia {
+      margin-top: 30px;
+    }
+
+    .experiencia h2 {
+      color: #6b4c3b;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .experiencia ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .experiencia ul li:hover {
+      animation: dance 0.6s ease;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mis Proyectos</h1>
+    <p>Aquí presento algunos de los proyectos en los que he trabajado:</p>
+
+    <div class="experiencia">
+      <h2>💼 Experiencia Relevante</h2>
+      <ul>
+        <li>🔹 Desarrollador Backend en proyectos de CRM
+          <ul>
+            <li>• Implementación de funcionalidades backend con .NET</li>
+            <li>• Gestión de etapas y oportunidades comerciales (EF, FluentMigrator)</li>
+            <li>• Creación de endpoints para administración de usuario, tenant, artículos, etc.</li>
+          </ul>
+        </li>
+        <li>🔹 Proyecto de rastreo GPS
+          <ul>
+            <li>• Desarrollo de lógica de procesamiento y almacenamiento de coordenadas</li>
+            <li>• Normalización y filtrado de duplicados en base de datos</li>
+            <li>• Trabajo con MySQL y migraciones seguras</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <p class="back-link"><a href="index.html">⬅️ Volver al inicio</a></p>
+  </div>
+</body>
+</html>

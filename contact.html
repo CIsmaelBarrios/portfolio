@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Claudio Ismael Barrios</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #f4f1ec url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat;
+      color: #3b2f2f;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px dashed #d8c3a5;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #6b4c3b;
+      animation: pop 0.8s ease;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      line-height: 2;
+      color: #5b3b2c;
+    }
+
+    .contact-info a {
+      color: #5b3b2c;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid #bfa28b;
+      transition: all 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: white;
+      background-color: #bfa28b;
+      border-radius: 4px;
+      padding: 3px 8px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #5b3b2c;
+      border: 1px solid #bfa28b;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: #f7f3ef;
+      transition: 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #bfa28b;
+      color: white;
+      animation: pop 0.3s;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .contact-info {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📬 Contactame</h1>
+    
+    <div class="contact-info">
+      📧 <strong>Email:</strong> <a href="mailto:claudiobarrios2510@gmail.com">claudiobarrios2510@gmail.com</a><br>
+      📞 <strong>Teléfono:</strong> <a href="tel:+543765100205">+54 376 5100205</a>
+    </div>
+
+    <a href="index.html" class="back-link">⬅️ Volver al inicio</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologías - Claudio Ismael Barrios</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #f4f1ec url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat;
+      color: #3b2f2f;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px dashed #d8c3a5;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #6b4c3b;
+      margin-bottom: 30px;
+      animation: pop 1s ease;
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .tech-item {
+      background-color: #f7f3ef;
+      border: 2px solid #bfa28b;
+      border-radius: 10px;
+      padding: 20px 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .tech-item:hover {
+      background-color: #bfa28b;
+      color: white;
+      transform: rotate(1deg) scale(1.05);
+    }
+
+    .tech-emoji {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .tech-desc {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      background: #fff7ef;
+      border-radius: 6px;
+      margin-top: 10px;
+      padding: 0 10px;
+      border: 1px solid #d3b8a1;
+      font-size: 0.95rem;
+      color: #3b2f2f;
+    }
+
+    .tech-item:hover .tech-desc {
+      max-height: 120px;
+      opacity: 1;
+      padding: 10px;
+    }
+
+    .back-link {
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      color: #5b3b2c;
+      border: 1px solid #bfa28b;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: #f7f3ef;
+      transition: 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #bfa28b;
+      color: white;
+      animation: pop 0.3s;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧰 Tecnologías que manejo</h1>
+
+    <div class="tech-grid">
+      <div class="tech-item">
+        <div class="tech-emoji">🌐</div>
+        HTML5
+        <div class="tech-desc">Lenguaje base de la web para estructurar páginas.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🎨</div>
+        CSS3
+        <div class="tech-desc">Estiliza interfaces con colores, animaciones y diseño responsive.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🧱</div>
+        .NET
+        <div class="tech-desc">Framework robusto para backend, APIs y lógica empresarial.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🔧</div>
+        C#
+        <div class="tech-desc">Lenguaje orientado a objetos utilizado en el ecosistema .NET.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🗃️</div>
+        Entity Framework
+        <div class="tech-desc">ORM para interactuar con bases de datos de forma eficiente.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🐬</div>
+        MySQL
+        <div class="tech-desc">Sistema de base de datos relacional, rápido y confiable.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">📦</div>
+        FluentMigrator
+        <div class="tech-desc">Herramienta para crear y ejecutar migraciones de base de datos en .NET.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🔌</div>
+        APIs REST
+        <div class="tech-desc">Diseño de servicios web para comunicación cliente-servidor.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🌱</div>
+        LINQ
+        <div class="tech-desc">Consulta de datos en colecciones de objetos o bases de datos.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🧠</div>
+        Mapster
+        <div class="tech-desc">Librería para mapear objetos entre clases en .NET.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🐙</div>
+        Git / GitHub
+        <div class="tech-desc">Control de versiones y colaboración en proyectos de código.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🐘</div>
+        PHP
+        <div class="tech-desc">Lenguaje del lado del servidor para desarrollo web dinámico.</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-emoji">🐍</div>
+        Python
+        <div class="tech-desc">Lenguaje versátil y fácil para scripting, web e IA.</div>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-link">⬅️ Volver al inicio</a>
+  </div>
+</body>
+</html>

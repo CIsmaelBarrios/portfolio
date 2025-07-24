@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Claudio Ismael Barrios</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    /* Animaciones clave */
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceHover {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes glowTitle {
+      0%, 100% {
+        text-shadow: 0 0 5px #bfa28b;
+      }
+      50% {
+        text-shadow: 0 0 15px #d8b290;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #f4f1ec url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat;
+      color: #3b2f2f;
+      animation: fadeSlideIn 1.2s ease forwards;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      max-width: 900px;
+      margin: 60px auto;
+      border: 1px solid #d8c3a5;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      animation: fadeSlideIn 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #6b4c3b;
+      animation: glowTitle 3s infinite ease-in-out;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      margin-top: 0;
+      color: #8b6f47;
+    }
+
+    .navigation ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .navigation li {
+      animation: fadeSlideIn 1.5s ease;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color: #5b3b2c;
+      font-size: 1.2rem;
+      padding: 12px 24px;
+      border: 2px solid #bfa28b;
+      border-radius: 5px;
+      background-color: #f7f3ef;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .navigation li a:hover {
+      background-color: #bfa28b;
+      color: white;
+      border-color: #a9886e;
+      animation: bounceHover 0.5s;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .navigation ul {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bienvenido a mi Portfolio</h1>
+      <p>Claudio Ismael Barrios</p>
+    </header>
+
+    <nav class="navigation">
+      <ul>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
